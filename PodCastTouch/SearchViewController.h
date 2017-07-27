@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+@import GoogleMobileAds;
+@import UIKit;
+@class GADBannerView;
 
-@interface SearchViewController : UIViewController
+@interface SearchViewController : UITableViewController
+
+@property(nonatomic, weak) IBOutlet GADBannerView *bannerView;
 
 @end

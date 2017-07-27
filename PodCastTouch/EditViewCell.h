@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface EditViewCell : UICollectionViewCell
+{
+    IBOutlet UIImageView    *imgView;
+
+}
+@property (nonatomic, retain)  IBOutlet UIImageView    *imgView;
 
 @end

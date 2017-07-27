@@ -101,7 +101,7 @@
 
 - (void)addBanner
 {
-    self.bannerView.adUnitID = @"ca-app-pub-2367841846534648/3089100414";
+    self.bannerView.adUnitID = @"ca-app-pub-8807882879991584/1756754633";
     self.bannerView.rootViewController = self;
     
     GADRequest *request = [GADRequest request];

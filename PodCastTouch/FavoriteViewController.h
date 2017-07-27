@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+@import GoogleMobileAds;
+@import UIKit;
+@class GADBannerView;
 
 @interface FavoriteViewController : UIViewController
+@property(nonatomic, weak) IBOutlet GADBannerView *bannerView;
 
 @end

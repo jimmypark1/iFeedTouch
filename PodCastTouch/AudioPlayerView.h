@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "STKAudioPlayer.h"
 
-@interface AudioPlayerView : UIView
+@class AudioPlayerView;
+
+
+@interface AudioPlayerView : UIView<STKAudioPlayerDelegate>
+
+@property (readwrite, retain) STKAudioPlayer* audioPlayer;
 
 @end

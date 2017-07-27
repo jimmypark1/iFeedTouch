@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface SearchCell : UITableViewCell
+@property (nonatomic, strong) IBOutlet UIImageView *imgView;
+@property (nonatomic, strong) IBOutlet UILabel *title;
+
 
 @end

@@ -8,6 +8,15 @@
 
 #import "EditViewCell.h"
 
+
 @implementation EditViewCell
 
+- (void)prepareForReuse
+{
+    for( UIView *view in self.subviews)
+    {
+        [view removeFromSuperview];
+    }
+
+}
 @end

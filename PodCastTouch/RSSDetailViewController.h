@@ -7,7 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RSSData.h"
+#import <AVFoundation/AVFoundation.h>
+#import "AudioPlayerView.h"
+#import <MediaPlayer/MediaPlayer.h>
+@import GoogleMobileAds;
+@import UIKit;
+@class GADBannerView;
 
-@interface RSSDetailViewController : UIViewController
+@interface RSSDetailViewController : UIViewController <AVAudioPlayerDelegate>
+
+@property (nonatomic, copy) NSString* rssTitle;
+@property (nonatomic, retain) RSSData *rssData;
+
+@property (nonatomic, retain) UIImage *thumb;
+@property(nonatomic, weak) IBOutlet GADBannerView *bannerView;
 
 @end

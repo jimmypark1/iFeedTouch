@@ -10,4 +10,11 @@
 
 @implementation LaunchViewController
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    UIImageView *imgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"launch_new"]];
+    [self.view addSubview:imgView];
+}
+
 @end

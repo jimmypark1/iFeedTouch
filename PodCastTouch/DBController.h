@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
 
 @interface DBController : NSObject
+@property (strong) NSManagedObjectContext *managedObjectContext;
+
++ (instancetype)sharedManager;
+
+- (void)saveTitle:(NSString*)title artworks:(NSArray*)artworks;
+- (NSArray*)readFavorite;
 
 @end

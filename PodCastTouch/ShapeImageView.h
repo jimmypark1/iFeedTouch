@@ -10,4 +10,8 @@
 
 @interface ShapeImageView : UIImageView
 
+@property (nonatomic) UIBezierPath *shape;
+@property (nonatomic) UIColor *borderColor;
+@property (nonatomic) CGFloat borderWidth;
+
 @end
